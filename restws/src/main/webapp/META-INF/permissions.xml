@@ -1,0 +1,110 @@
+<permissions version="7">
+
+    <permission>
+        <class-name>java.util.PropertyPermission</class-name>
+        <name>*</name>
+        <actions>read, write</actions>
+    </permission>
+
+    <permission>
+        <class-name>java.util.logging.LoggingPermission</class-name>
+        <name>control</name>
+    </permission>
+
+    <permission>
+        <class-name>java.lang.RuntimePermission</class-name>
+        <name>*</name>
+    </permission>
+
+    <permission>
+        <class-name>java.lang.reflect.ReflectPermission</class-name>
+        <name>suppressAccessChecks</name>
+    </permission>
+
+    <permission>
+        <class-name>java.io.FilePermission</class-name>
+        <name><![CDATA[<<ALL FILES>>]]></name>
+        <actions>read, write</actions>
+    </permission>
+
+    <permission>
+        <class-name>org.jboss.vfs.VirtualFilePermission</class-name>
+        <name><![CDATA[<<ALL FILES>>]]></name>
+        <actions>getfile</actions>
+    </permission>
+
+    <permission>
+        <class-name>java.net.SocketPermission</class-name>
+        <name>*:5432</name>
+        <actions>accept,connect,listen,resolve</actions>
+    </permission>
+
+    <permission>
+        <class-name>java.security.SecurityPermission</class-name>
+        <name>getPolicy</name>
+    </permission>
+
+    <permission>
+        <class-name>javax.management.MBeanPermission</class-name>
+        <name>*</name>
+        <actions>queryNames,registerMBean,unregisterMBean</actions>
+    </permission>
+
+    <permission>
+        <class-name>javax.management.MBeanTrustPermission</class-name>
+        <name>register</name>
+    </permission>
+
+    <permission>
+        <class-name>javax.management.MBeanServer</class-name>
+        <name>mbeanServer</name>
+    </permission>
+
+    <permission>
+        <class-name>javax.management.MBeanServerPermission</class-name>
+        <name>findMBeanServer</name>
+    </permission>
+
+
+    <permission>
+        <class-name>javax.security.auth.AuthPermission</class-name>
+        <name>getSubject</name>
+    </permission>
+    <permission>
+        <class-name>org.hibernate.validator.HibernateValidatorPermission</class-name>
+        <name>accessPrivateMembers</name>
+    </permission>
+    
+    <permission>
+        <class-name>javax.net.ssl.SSLPermission</class-name>
+        <name>setHostnameVerifier</name>
+    </permission>
+
+    <permission>
+        <class-name>java.net.NetPermission</class-name>
+        <name>getProxySelector</name>
+    </permission>
+
+    <permission>
+        <class-name>java.net.SocketPermission</class-name>
+        <name>localhost:8080</name>
+        <actions>connect,resolve</actions>
+    </permission>
+
+    <permission>
+        <class-name>java.net.SocketPermission</class-name>
+        <name>localhost:8443</name>
+        <actions>connect,resolve</actions>
+    </permission>
+
+    <permission>
+        <class-name>java.net.SocketPermission</class-name>
+        <name>*:443</name>
+        <actions>connect,resolve</actions>
+    </permission>
+    <permission>
+        <class-name>java.lang.management.ManagementPermission</class-name>
+        <name>monitor</name>
+    </permission>
+
+</permissions>
